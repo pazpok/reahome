@@ -6,3 +6,79 @@ Author:       Pazpok
 Version:      1.0.0
 License:      GNU General Public License v2 or later
 */
+
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Raleway');
+
+/* Margin navigateur */
+html, body {
+    margin:0;
+    padding:0;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: center;
+}
+
+header a {
+    padding: 20px;
+}
+/* Menu */
+#menu-top-menu {
+    display: flex;
+}
+
+#menu-top-menu li {
+    list-style-type: none;
+    padding: 1rem;
+}
+
+#menu-top-menu li a {
+    text-decoration: none;
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 20px;
+}
+
+#menu-top-menu li:hover {
+    background-color: #b1b1b1;
+}
+
+
+/* Body main page */
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.home-main-title {
+    position: absolute;
+    color: #fff;
+    align-self: center;
+    margin-top: 180px;
+    text-align: center;
+}
+
+.home-main-img {
+    max-width: 100%;
+}
+
+.agency-section {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 40px 0px;
+}
+
+.four-icon {
+    background-color: #b1b1b1;
+    display: flex;
+    justify-content: center;
+}
+
+.icon-all {
+    margin: 40px 0px;
+    text-align: center;
+}

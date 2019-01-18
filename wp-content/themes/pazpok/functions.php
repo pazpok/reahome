@@ -7,6 +7,10 @@ function insert_css() {
 	// On ajoute le jQuery au thème
 	wp_register_script('jquery2','https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js');
     wp_enqueue_script('jquery2');
+
+    // On ajoute font awesome
+    wp_enqueue_style( 'load-fa', 'https://use.fontawesome.com/releases/v5.6.3/css/all.css' );
+    wp_enqueue_style('font');
 }
 
 // Insertion menu
@@ -23,6 +27,9 @@ add_action("wp_footer", "footer_text");
 function footer_text() {
 	echo "<p style='color:black'>© Pazpok Theme - 2019</p><br/>";
 }
+
+// ajouter image mise en avant dans article
+add_theme_support('post-thumbnails');
 
 // Ajouter custom post type
 function create_post_type() { 

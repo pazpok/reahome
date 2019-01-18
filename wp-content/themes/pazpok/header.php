@@ -10,4 +10,9 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-    
+    <header>
+        <a href="<?= bloginfo('url');?>">
+            <img src="<?= bloginfo('template_url');?>/images/logo-1.png" alt="logo">
+        </a>
+        <?php wp_nav_menu(array( 'theme_location' => 'menu-principal')); ?>
+    </header>
