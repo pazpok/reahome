@@ -25,7 +25,6 @@ register_nav_menus(array(
 add_action("wp_footer", "footer_text");
 // Définir ‘footer_text'
 function footer_text() {
-	echo "<p style='color:black'>© Pazpok Theme - 2019</p><br/>";
 }
 
 // ajouter image mise en avant dans article
