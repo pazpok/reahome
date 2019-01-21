@@ -21,6 +21,12 @@ register_nav_menus(array(
 	'menu-footer' => 'Navigation footer'
 ));
 
+// nouvelle taille d'image
+function new_size(){
+    // L'image sera tronquée exactement à la dimension indiquée
+    add_image_size( 'small', 300, 300, true ); 
+}
+add_action( 'after_setup_theme', 'new_size' );
 
 // ajouter image mise en avant dans article
 add_theme_support('post-thumbnails');

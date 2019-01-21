@@ -54,7 +54,7 @@ header a {
 
 
 /* Body main page */
-
+/* Block image + texte */
 .title-container {
     display: flex;
     flex-direction: column;
@@ -74,12 +74,14 @@ header a {
     max-width: 100%;
 }
 
+/* Block agence */
 .agency-section {
     display: flex;
     justify-content: space-evenly;
     margin: 40px 0px;
 }
 
+/* Block 4 icons */
 .four-icon {
     background-color: #f0f0f0;
     display: flex;
@@ -91,13 +93,60 @@ header a {
     text-align: center;
 }
 
-/* Single Propriétés */
+/* Block propriétés */
+.proprietes-home {
+    background-color: #fafafa;
+}
 
+.texte-proprietes-home {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+}
+
+.texte-proprietes-home h2 {
+    font-size: 40px;
+}
+
+.texte-proprietes-home span {
+    background-color: #fc553f;
+    width: 100px;
+    height: 2px;
+}
+
+.texte-proprietes-home p {
+    width: 400px;
+}
+
+/* Block agents */
+.team h2{
+    text-align: center;
+    font-size: 40px;
+}
+
+.team hr {
+    text-align: center;
+    background-color: #fc553f;
+    width: 100px;
+    height: 2px;
+    border: none;
+}
+
+.team-content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.team-content h3 {
+    width: 100%;
+}
+
+/* Single Propriétés */
 .all-card {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-
 }
 
 .card {
@@ -148,6 +197,27 @@ header a {
 
 hr {
     border-bottom: 0px;
+}
+
+.title-related-property {
+    font-size: 40px;
+    margin-left: 50px;
+}
+
+.all-mini-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-left: 50px;
+}
+
+.mini-card {
+    margin: 10px 20px;
+}
+
+.mini-card a {
+    text-decoration: none;
+    color: #3C3C3C;
 }
 
 /* footer */
