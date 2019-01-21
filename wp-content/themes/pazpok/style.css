@@ -59,13 +59,14 @@ header a {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    height: calc(100vh - 100px);
+    overflow: hidden;
 }
 
 .home-main-title {
     position: absolute;
     color: #fff;
     align-self: center;
-    margin-top: 180px;
     text-align: center;
 }
 
@@ -88,6 +89,65 @@ header a {
 .icon-all {
     margin: 40px 0px;
     text-align: center;
+}
+
+/* Single Propriétés */
+
+.all-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.card {
+    width: 25%;
+    border: 2px solid #f7f7f7;
+    margin: 10px 0;
+}
+
+.card a {
+    text-decoration: none;
+    text-align: center;
+    color: #3C3C3C;
+}
+
+.card a img{
+    width: 100%;
+}
+
+.prix-card {
+    color: #fc553f;
+}
+
+.info-card {
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 2px solid #f7f7f7;
+}
+
+/* single-propriétés */
+
+.title-proprietes {
+    text-align: center;
+}
+
+.bloc-proprietes {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.info-proprietes {
+    width: 400px;
+}
+
+.prix-proprietes {
+    color: #fc553f;
+    font-size: 30px;
+}
+
+hr {
+    border-bottom: 0px;
 }
 
 /* footer */
