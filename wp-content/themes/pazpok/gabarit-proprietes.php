@@ -22,6 +22,15 @@ $args = array(
 <!-- The Loop -->
 <?php if ( $the_query->have_posts() ) : ?>
 <div class="container">
+    <div class="ville-link hvr-underline-from-center">
+        <a href="<?php the_permalink() ?>">Tous</a>
+        <?php $villes = get_terms('ville', array(
+            'hide_empty' => false,
+        )); ?>
+        <?php foreach ($villes as $ville) : ?>
+            <a href="<?php echo get_term_link($ville->slug, 'ville'); ?>"><?php echo $ville->name; ?></a>
+        <?php endforeach ?>
+    </div>
     <div class="all-card">
         <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
         <div class="card">
