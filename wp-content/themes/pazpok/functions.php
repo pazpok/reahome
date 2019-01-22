@@ -21,10 +21,23 @@ register_nav_menus(array(
 	'menu-footer' => 'Navigation footer'
 ));
 
+// Insertion sidebar
+
+if ( function_exists('register_sidebar') )
+register_sidebar(array(
+	'name'=>'sidebar',
+	'before_widget'=>'<div>',
+	'after_widget'=>'</div>',
+	'before_title'=>'<h3>',
+	'after_title'=>'</h3>',
+
+));
+
 // nouvelle taille d'image
 function new_size(){
     // L'image sera tronquée exactement à la dimension indiquée
-    add_image_size( 'small', 300, 300, true ); 
+    add_image_size( 'small', 300, 300, true );
+    add_image_size( 'mediuml', 500, 332, true );
 }
 add_action( 'after_setup_theme', 'new_size' );
 
@@ -57,3 +70,21 @@ function create_post_type() {
     );
 }   
 add_action( 'init', 'create_post_type' );
+
+// Ajouter taxonomy
+function themes_taxonomy() {
+	register_taxonomy(
+		'ville',
+		'proprietes',
+		array(
+			'label' => 'Ville',
+			'query_var' => true,
+			'rewrite' => array(
+				'slug' => 'ville',
+				'with_front' => true
+			),
+		'hierarchical' => true,
+		)
+    );
+}
+add_action( 'init', 'themes_taxonomy');

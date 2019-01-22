@@ -21,6 +21,7 @@ $args = array(
 
 <!-- The Loop -->
 <?php if ( $the_query->have_posts() ) : ?>
+<div class="container">
     <div class="all-card">
         <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
         <div class="card">
@@ -57,5 +58,6 @@ $args = array(
         </div>
         <?php endwhile; ?>
     </div>
+</div>
 <?php endif; ?>	
 <?php get_footer(); ?>

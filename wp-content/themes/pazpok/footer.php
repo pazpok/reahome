@@ -6,10 +6,10 @@
                         <img src="<?= bloginfo('template_url');?>/images/logo-2.png" alt="logo">
                     </div>
                     <div class="icon-social-footer">
-                        <i class="fab fa-facebook-f fa-2x"></i>
-                        <i class="fab fa-pinterest-p fa-2x"></i>
-                        <i class="fab fa-instagram fa-2x"></i>
-                        <i class="fab fa-google-plus-g fa-2x"></i>
+                        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f fa-2x"></i></a>
+                        <a href="https://www.pinterest.fr" target="_blank"><i class="fab fa-pinterest-p fa-2x"></i></a>
+                        <a href="https://www.instagram.com/?hl=fr" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+                        <a href="https://plus.google.com/discover" target="_blank"><i class="fab fa-google-plus-g fa-2x"></i></a>
                     </div>
                 </div>
                 <div class="menu-footer">
