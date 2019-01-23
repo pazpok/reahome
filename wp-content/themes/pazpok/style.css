@@ -69,13 +69,13 @@ header {
 .icon-social-header i {
     background-size: 100px;
     border: 1px solid #3C3C3C;
-    border-radius: 50px;
+    border-radius: 25px;
     color: #3C3C3C;
-    height: 50px;
-    line-height: 50px;
-    margin-right: 10px;
+    height: 25px;
+    line-height: 25px;
+    margin-right: 5px;
     text-align: center;
-    width: 50px;
+    width: 25px;
     transition: background-color 1s ease,
                 color 1s ease;
 }
@@ -420,6 +420,123 @@ hr {
 .article-content {
     width: 70%;
 }
+
+.article-auteur {
+    font-style: italic;
+}
+
+.commentlist {
+    background-color: #fafafa;
+    border: 2px solid #f7f7f7;
+    border-radius: 5px;
+}
+
+.comment-body {
+    display: flex;
+}
+
+.comment-body p {
+    color: #949494;
+}
+
+.comment-edit-link {
+    display: none;
+}
+
+.reply {
+    align-self: flex-end;
+}
+
+.vcard {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.vcard img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.fn {
+    margin-left: 25px;
+    text-transform: uppercase;
+    font-style: inherit;
+    font-family: 'Raleway', sans-serif;
+}
+
+.says {
+    display: none;
+}
+
+.comment-meta {
+    align-self: flex-end;
+}
+
+.comment-meta a {
+    text-decoration: none;
+    color: #3C3C3C;
+}
+
+/* Contact */
+.title-contact {
+    text-align: center;
+}
+
+.info-contact {
+    display: flex;
+    justify-content: space-between;
+}
+
+.company-info {
+    width: 30%;
+}
+
+.form-contact {
+    width: 60%;
+    font-family: 'Raleway', sans-serif;
+}
+
+.inline-input {
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    background-color: #fdfdfd;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 2px;
+    border: 1px solid #949494;
+    padding: 10px;
+}
+
+textarea {
+    background-color: #fdfdfd;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 2px;
+    border: 1px solid #949494;
+    width: 100%;
+}
+
+.wpcf7-submit {
+    background-color: #fc553f;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px 15px;
+    position: relative;
+    text-decoration: none;
+    transition: background-color 0.5s ease-out;
+}
+
+.wpcf7-submit:hover {
+    background-color: #fff;
+    color: #fc553f;
+    border: 1px solid #fc553f;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
 /* footer */
 footer {
     background-color: #3C3C3C;

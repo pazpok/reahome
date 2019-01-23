@@ -16,9 +16,9 @@
         </a>
         <?php wp_nav_menu(array( 'theme_location' => 'menu-principal')); ?>
         <div class="icon-social-header">
-            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f fa-2x"></i></a>
-            <a href="https://www.pinterest.fr" target="_blank"><i class="fab fa-pinterest-p fa-2x"></i></a>
-            <a href="https://www.instagram.com/?hl=fr" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
-            <a href="https://plus.google.com/discover" target="_blank"><i class="fab fa-google-plus-g fa-2x"></i></a>
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.pinterest.fr" target="_blank"><i class="fab fa-pinterest-p"></i></a>
+            <a href="https://www.instagram.com/?hl=fr" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://plus.google.com/discover" target="_blank"><i class="fab fa-google-plus-g"></i></a>
         </div>
     </header>
