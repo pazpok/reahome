@@ -1,7 +1,9 @@
 <?php /* Template Name: Gabarit A Propos */ ?>
 <?php get_header(); ?>
 <div class="container">
-    <h1 class="title-ap"><?php the_title() ;?></h1>
+    <h1 class="title-ap"><?php the_title() ;?>
+    <hr>
+    </h1>
     <div class="agency-apropos">
             <img src="<?php the_post_thumbnail_url('medium') ?>" alt="a propos">
         <div class="agency-text">
@@ -27,7 +29,7 @@
 </div>
 <?php get_field('our-team-title') ;?>
 
-<h2 class="team-title"><?php the_field('our-team-title');?></h2>
+<h2 class="team-title"><?php the_field('our-team-title');?><hr></h2>
 
 <div class="four-team container">
     <?php if( have_rows('our-team') ): ?>

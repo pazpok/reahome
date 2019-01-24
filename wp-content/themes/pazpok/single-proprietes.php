@@ -10,6 +10,7 @@
             <?php endif; ?>
             <div class="info-proprietes">
                 <div class="prix-proprietes">
+                    <i class="fas fa-bookmark"></i>
                     <?php get_field('prix') ;?>
                     <?php the_field('prix');?>
                 </div>
@@ -34,14 +35,14 @@
             </div>
     </div>
 <?php endif;?>
-<hr>
+<hr class="single-propriete-hr">
 <h2 class="title-related-property">Nos Propiétés</h2>
 <?php
 
 $args = array(
     'post_type' => 'proprietes',
     'posts_per_page' => 4,
-    'order' => 'RAND',
+    'order' => 'rand',
 );
 ?>
 

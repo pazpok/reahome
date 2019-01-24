@@ -88,3 +88,12 @@ function themes_taxonomy() {
     );
 }
 add_action( 'init', 'themes_taxonomy');
+
+// page option ACF
+if( function_exists('acf_add_options_page') ) {
+
+	acf_add_options_page(array(
+		'page_title' 	=> 'Theme Footer Settings',
+		'menu_title'	=> 'Footer',
+	));
+}

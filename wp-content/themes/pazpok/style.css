@@ -15,6 +15,9 @@ html, body {
     padding:0;
     font-family: 'Raleway', sans-serif;
 }
+#map {
+    height: 400px;
+}
 
 h1, h2, h3 {
     color: #3C3C3C
@@ -34,6 +37,7 @@ header {
 .nav-link {
     padding: 20px;
 }
+
 /* Menu */
 #menu-top-menu {
     display: flex;
@@ -57,7 +61,7 @@ header {
     background-color: #3C3C3C;
 }
 
-#menu-top-menu li a:hover {
+#menu-top-menu li:hover a{
     color: #fff;
 }
 
@@ -118,7 +122,7 @@ header {
 }
 
 .title-agency-front-hr {
-    background-color: #fc553f;
+    background-color: #e2574c;
     width: 50px;
     height: 2px;
     border: none;
@@ -162,7 +166,7 @@ header {
 }
 
 .texte-proprietes-home span {
-    background-color: #fc553f;
+    background-color: #e2574c;
     width: 100px;
     height: 2px;
 }
@@ -172,7 +176,7 @@ header {
 }
 
 .more-properties {
-    background-color: #fc553f;
+    background-color: #e2574c;
     border-radius: 5px;
     color: #fff;
     padding: 10px 15px;
@@ -182,8 +186,8 @@ header {
 
 .more-properties:hover {
     background-color: #fff;
-    color: #fc553f;
-    border: 1px solid #fc553f;
+    color: #e2574c;
+    border: 1px solid #e2574c;
     border-radius: 5px;
     padding: 10px 15px;
 }
@@ -210,10 +214,26 @@ header {
 
 .title-team-front-hr {
     text-align: center;
-    background-color: #fc553f;
+    background-color: #e2574c;
     width: 100px;
     height: 2px;
     border: none;
+}
+
+/* Block Partners */
+.partners {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+
+.partners h2 {
+    font-size: 30px;
+}
+
+.partners img {
+    height: 30px;
+    margin: 30px 0;
 }
 
 /* Propriétés */
@@ -243,7 +263,7 @@ header {
     left: 0;
     right: 0;
     bottom: 0;
-    background: #fc553f;
+    background: #e2574c;
     height: 4px;
     -webkit-transform: translateY(4px);
     transform: translateY(4px);
@@ -264,11 +284,21 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 50px;
 }
 
 .card {
     border: 2px solid #f7f7f7;
     margin: 10px 0;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+}
+
+.card:hover {
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .card a {
@@ -282,7 +312,7 @@ header {
 }
 
 .prix-card {
-    color: #fc553f;
+    color: #e2574c;
 }
 
 .info-card {
@@ -305,13 +335,25 @@ header {
     width: 400px;
 }
 
+.main-picture {
+    border-radius: 5px;
+}
+
 .prix-proprietes {
-    color: #fc553f;
+    color: #e2574c;
     font-size: 30px;
+}
+
+.prix-proprietes i{
+    color: #3C3C3C;
 }
 
 hr {
     border-bottom: 0px;
+}
+
+.single-propriete-hr {
+    width: 50%;
 }
 
 .title-related-property {
@@ -341,6 +383,14 @@ hr {
     font-size: 40px;
 }
 
+.title-ap hr {
+    background-color: #e2574c;
+    width: 60px;
+    height: 2px;
+    border: none;
+    margin-top: 20px;
+}
+
 .agency-apropos {
     display: flex;
     justify-content: center;
@@ -366,6 +416,14 @@ hr {
     font-size: 40px;
 }
 
+.team-title hr {
+    background-color: #e2574c;
+    width: 60px;
+    height: 2px;
+    border: none;
+    margin-top: 20px;
+}
+
 .four-team {
     display: flex;
     flex-wrap: wrap;
@@ -374,7 +432,7 @@ hr {
 
 .team-all {
     width: 20%;
-    margin: 10px 0;
+    margin-bottom: 50px;
     border: 2px solid #f7f7f7;
 }
 
@@ -418,7 +476,7 @@ hr {
 }
 
 .read-more {
-    background-color: #fc553f;
+    background-color: #e2574c;
     border-radius: 5px;
     color: #fff;
     padding: 10px 15px;
@@ -429,8 +487,8 @@ hr {
 
 .read-more:hover {
     background-color: #fff;
-    color: #fc553f;
-    border: 1px solid #fc553f;
+    color: #e2574c;
+    border: 1px solid #e2574c;
     border-radius: 5px;
     padding: 10px 15px;
 }
@@ -459,6 +517,16 @@ hr {
     display: block;
 }
 
+.rpwwt-post-title {
+    font-weight: 600;
+}
+
+.rpwwt-post-date {
+    margin-top: 10px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
 /* Single */
 .article {
     display: flex;
@@ -474,13 +542,14 @@ hr {
 }
 
 .commentlist {
-    background-color: #fafafa;
     border: 2px solid #f7f7f7;
     border-radius: 5px;
 }
 
 .comment-body {
     display: flex;
+    background-color: #f6f6f6;
+    margin-top: 50px;
 }
 
 .comment-body p {
@@ -495,21 +564,24 @@ hr {
     align-self: flex-end;
 }
 
+.reply a {
+    text-decoration: none;
+    color: #3C3C3C;
+}
+
 .vcard {
     display: flex;
     flex-flow: column wrap;
 }
 
 .vcard img {
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     border-radius: 10px;
-    margin-top: 30px;
 }
 
 .fn {
-    margin-left: 25px;
-    text-transform: uppercase;
+    margin-right: 25px;
     font-style: inherit;
     font-family: 'Raleway', sans-serif;
 }
@@ -525,6 +597,15 @@ hr {
 .comment-meta a {
     text-decoration: none;
     color: #3C3C3C;
+}
+
+.logged-in-as {
+    display: none;
+}
+
+.comment-reply-title a {
+    color: #3C3C3C;
+    text-decoration: none;
 }
 
 /* Contact */
@@ -565,6 +646,11 @@ input {
     border-radius: 2px;
     border: 1px solid #949494;
     padding: 10px;
+    transition: box-shadow 0.1s ease;
+}
+
+input:hover {
+    box-shadow: 0 0 5px #3C3C3C;
 }
 
 textarea {
@@ -573,10 +659,15 @@ textarea {
     border-radius: 2px;
     border: 1px solid #949494;
     width: 100%;
+    transition: box-shadow 0.1s ease;
+}
+
+textarea:hover {
+    box-shadow: 0 0 5px #3C3C3C;
 }
 
 .wpcf7-submit {
-    background-color: #fc553f;
+    background-color: #e2574c;
     border-radius: 5px;
     color: #fff;
     padding: 10px 15px;
@@ -587,8 +678,8 @@ textarea {
 
 .wpcf7-submit:hover {
     background-color: #fff;
-    color: #fc553f;
-    border: 1px solid #fc553f;
+    color: #e2574c;
+    border: 1px solid #e2574c;
     border-radius: 5px;
     padding: 10px 15px;
 }
@@ -663,5 +754,5 @@ footer {
 }
 
 .contact-footer a {
-    color: #fc553f;
+    color: #e2574c;
 }

@@ -115,6 +115,20 @@
         <?php the_field('team-text');?>
     </div>
 </div>
+<div class="container">
+    <div class="partners">
+        <?php get_field('partners-image') ;?>
+        <h2><?php the_field('partners-image') ;?></h2>
+        <?php $img2 = get_field('partners-image-2') ;?>
+        <img src="<?php echo $img2['url'] ;?>" alt="">
+        <?php $img3 = get_field('partners-image-3') ;?>
+        <img src="<?php echo $img3['url'] ;?>" alt="">
+        <?php $img4 = get_field('partners-image-4') ;?>
+        <img src="<?php echo $img4['url'] ;?>" alt="">
+        <?php $img5 = get_field('partners-image-5') ;?>
+        <img src="<?php echo $img5['url'] ;?>" alt="">
+    </div>
+</div>
 <?php endwhile;?>
 <?php endif;?>
 

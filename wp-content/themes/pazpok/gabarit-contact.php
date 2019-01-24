@@ -3,9 +3,8 @@
 <?php get_field('titre-contact') ;?>
 <div class="container">
     <h1 class="title-contact"><?php the_field('titre-contact') ;?></h1>
-    <?php $img = get_field('image-google-map') ;?>
-    <img src="<?php echo $img['url'] ;?>" alt="">
-    
+    <div id="map">
+    </div>
     <div class="info-contact">
         <div class="company-info">
             <h2>
