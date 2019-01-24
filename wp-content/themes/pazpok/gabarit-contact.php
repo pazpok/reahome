@@ -8,20 +8,32 @@
     
     <div class="info-contact">
         <div class="company-info">
-            <?php get_field('titre-info-contact') ;?>
-            <?php the_field('titre-info-contact') ;?>
-            <?php get_field('texte-info-contact') ;?>
-            <?php the_field('texte-info-contact') ;?>
-            <?php get_field('rue-info-contact') ;?>
-            <?php the_field('rue-info-contact') ;?>
-            <?php get_field('ville-info-contact') ;?>
-            <?php the_field('ville-info-contact') ;?>
+            <h2>
+                <?php get_field('titre-info-contact') ;?>
+                <?php the_field('titre-info-contact') ;?>
+            </h2>
+            <div class="company-text">
+                <?php get_field('texte-info-contact') ;?>
+                <?php the_field('texte-info-contact') ;?>
+            </div>
+            <div class="company-adress">
+                <?php get_field('rue-info-contact') ;?>
+                <?php the_field('rue-info-contact') ;?>
+                <?php get_field('ville-info-contact') ;?>
+                <?php the_field('ville-info-contact') ;?>
+            </div>
+            <div class="company-tel">
             <?php get_field('tel-info-contact') ;?>
             <?php the_field('tel-info-contact') ;?>
+            </div>
+            <div class="company-fax">
             <?php get_field('fax-info-contact') ;?>
             <?php the_field('fax-info-contact') ;?>
+            </div>
+            <div class="company-email">
             <?php get_field('email-info-contact') ;?>
             <?php the_field('email-info-contact') ;?>
+            </div>
         </div>
         <div class="form-contact">
         <?php get_field('titre-form-contact') ;?>
